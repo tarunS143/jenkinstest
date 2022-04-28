@@ -1,19 +1,19 @@
 pipeline {
     agent any
-
     stages {
-        
-        stage('Source') {
+        stage('Path') {
             steps {
                 sh 'pwd'
                 sh 'cd /root/Desktop'
                 sh 'pwd'
             }
-			steps {
+	}
+        stage('File') {
+            steps {
                 sh 'pwd'
                 sh 'touch /root/Desktop/fromgithub'
                 sh 'pwd'
             }
-        }
+	}
     }
 }
